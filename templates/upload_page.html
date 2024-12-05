@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF Files</title>
+</head>
+<body>
+    <h2>Upload Two PDF Files</h2>
+    <form action="http://127.0.0.1:8000/upload-pdf/" method="post" enctype="multipart/form-data">
+        <label for="file1">Old Version:</label>
+        <input type="file" id="file1" name="files" accept="application/pdf"><br><br>
+
+        <label for="file2">New Version: </label>
+        <input type="file" id="file2" name="files" accept="application/pdf"><br><br>
+        
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
